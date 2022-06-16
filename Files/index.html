@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="http://fast.fonts.net/cssapi/508ad9a8-6386-4217-a4e3-ac0ffb5e5b62.css">
+<link rel="stylesheet" type="text/css" href="Include/cssStyle.css">
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<title>New Winchester Christian Church</title>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+    	<div class="container">
+        	<div class="navbar-header">
+            	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                	<span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="RetailSite.asp" class="navbar-brand">NWCC</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                	<li><a href="page.asp?name=new">I'm New</a></li>
+                    <li><a href="page.asp?name=about">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="page.asp?name=connect">Connect / Care</a></li>
+                    <li><a href="page.asp?name=sermons">Sermons</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--<><><><><><><><><><><><><><><><><><><><><><><><><><>-->
+    <!--  Begin Main Content                                -->
+    <!--<><><><><><><><><><><><><><><><><><><><><><><><><><>-->
+    <div class="ms-content-wrapper">
+        <div class="container-fluid">
+            <!--<><><><><><><><><><><><><><><><><><><><><><><><><><>-->
+            <!--  Begin Main Hero Banner                            -->
+            <!--<><><><><><><><><><><><><><><><><><><><><><><><><><>-->
+            <div class="row" id="hero-container" name="top">
+                <div class="hero-type container">
+                	<div class="row">
+                    	<div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
+                            <h3 class="editable"><span class="alternate">NEW WINCHESTER CHRISTIAN CHURCH</span> <span class="tagline">come join us this weekend.</span></h3>
+                            <a href="#work" class="editable"><button class="btn btn-primary alternate"><span>I'M NEW</span></button></a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="attn-grab">
+            	<div class="container">
+                	<div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <p class="page-lead"><span class="title">NEW TO THE AREA?</span><span class="tagline">join us and become apart of something bigger.</span></p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <button class="btn btn-primary alternate btn-border"><span>I'M NEW</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="container-fluid">
+                	<div class="row">
+                    	<div class="col-lg-6 col-md-6 col-sm-4 col-xs-12">
+                        	<div class="row" id="about-us">
+                            	<p class="page-lead"><span class="title">NWCC BLOG</span><span class="tagline">check out our blog.</span></p>
+                                <button class="btn btn-primary alternate"><span>VIEW NOW</span></button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12">
+                        	<div class="row" id="media">
+                            	<p class="page-lead"><span class="title">SERMONS</span><span class="tagline">new series.</span></p>
+                                <button class="btn btn-primary alternate"><span>VIEW NOW</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="contact-container" name="contact">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="row pad-vertical">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        	<div class="row">
+								<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+                                <div id="g-map" style="overflow:hidden;height:500px;width:100%;">
+                                    <div id="gmap_canvas" style="height:500px;width:100%;"></div>
+                                    <style>
+                                        #gmap_canvas img {
+                                            max-width:none!important;
+                                            background:none!important
+                                        }
+                                    </style>
+                                    <a class="google-map-code" href="http://wptiger.com" id="get-map-data">wptiger</a>
+                                </div>
+                                <script type="text/javascript"> 
+                                    function init_map() {
+                                        var myOptions = { 
+                                            zoom:15, 
+                                            scrollwheel: false, 
+                                            navigationControl: false, 
+                                            mapTypeControl: false, 
+                                            scaleControl: false, 
+                                            draggable: false,
+                                            center:new google.maps.LatLng(39.759781, -86.650746),
+                                            mapTypeId: google.maps.MapTypeId.ROADMAP};
+                                        map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+                                        marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(39.759781, -86.650746)});
+                                        infowindow = new google.maps.InfoWindow({content:"<b>NEW WINCHESTER CHRISTIAN CHURCH</b><br/><br/>53 S State Road 75<br/>Danville, IN 46122" });
+                                        google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});
+                                        infowindow.open(map,marker);
+                                    }
+                                    google.maps.event.addDomListener(window, 'load', init_map);
+                                </script>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="row" id="info">
+                            	<div class="row-info">
+                                    <p class="page-lead"><span class="title">SERVICE TIMES</span></p>
+                                    <p class="page-lead"><span class="tagline">saturday at 5 p.m.</span></p>
+                                    <p class="page-lead"><span class="tagline">sunday at 9 and 11 a.m.</span></p>
+                                </div>
+                                <div class="row-info">
+                                    <p class="page-lead"><span class="title">LOCATION</span></p>
+                                    <p class="page-lead"><span class="tagline">53 S State Road 75</span></p>
+                                    <p class="page-lead"><span class="tagline">Danville, IN 46122</span></p>
+                                </div>
+                                <div class="row-info">
+                                    <p class="page-lead"><span class="title">CONTACT US</span></p>
+                                    <p class="page-lead"><span class="tagline">(317) 539-2497</span></p>
+                                    <p class="page-lead"><span class="tagline">Danville, IN 46122</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="row" id="footer">
+            	<div class="container">
+                	<div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <p class="copyright">&copy; 2015 Priority Press Inc. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--<><><><><><><><><><><><><><><><><><><><><><><><><><>-->
+            <!--  End Main Hero Banner                              -->
+            <!--<><><><><><><><><><><><><><><><><><><><><><><><><><>-->
+        </div>
+    </div>
+</body>
+</html>

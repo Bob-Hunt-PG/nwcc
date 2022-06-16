@@ -1,0 +1,691 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*OPS Reset*/
+#contentleftsidebar {
+    display: none;
+}
+#maintable {
+    width: 100%;
+}
+#contenttable {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#contenttable .ms-content-wrapper > .container-fluid > #info,
+#contenttable .ms-content-wrapper > .container-fluid > #new,
+#contenttable .ms-content-wrapper > .container-fluid > #connect {
+	height: 450px;
+	padding: 195px 0px;
+}
+#contenttable .ms-content-wrapper > .container-fluid > #info > .row-info,
+#contenttable .ms-content-wrapper > .container-fluid > #new > .row-info,
+#contenttable .ms-content-wrapper > .container-fluid > #connect > .row-info {
+	padding: 0;
+}
+#contenttable .ms-content-wrapper > .container-fluid .container {
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+#contenttable .ms-content-wrapper > .container-fluid .container hr {
+	margin-top: 0;
+}
+#contenttable .ms-content-wrapper > .container-fluid .container .page-head {
+	text-align: left;
+	font-size: 40px;
+	line-height: 2;
+	margin: 0;
+}
+#contenttable .ms-content-wrapper > .container-fluid .container .page-lead {
+	text-align: left;
+	font-size: 18px;
+	line-height: 2;
+}
+#contenttable .ms-content-wrapper > .container-fluid .container .connect-form .page-head {
+    font-size: 30px;
+}
+#contenttable .ms-content-wrapper > .container-fluid .container .connect-form .page-lead {
+	text-align: right;
+	font-size: 18px;
+	line-height: 2;
+}
+#contenttable .ms-content-wrapper > .container-fluid .container .connect-form .page-lead a {
+	font-size: 50px;
+}
+#contenttable .ms-content-wrapper > .container-fluid .container .connect-form hr {
+	margin-top: 20px;
+}
+#contenttable .ms-content-wrapper > .container-fluid .container .connect-form .form-line {
+	text-align: left;
+	padding: 0;
+}
+/*---------*/
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.title {
+    font-size: 36px;
+    display: block;
+}
+
+.tagline {
+    font-size: 25px;
+    color: #337AB7;
+    font-style: italic;
+}
+
+.navbar {
+	background: rgba(0, 0, 0, .3);;
+	border: none;
+}
+
+.navbar > .container > .navbar-header > .navbar-brand {
+    color: #FFF;
+    font-size: 30px;
+    background: #337ab7;
+}
+
+.navbar > .container > #navbar > .nav > li > a {
+	font-size: 20px;
+	position: relative;
+	color: #FFF;
+	text-decoration: none;
+	/*text-shadow: 2px 2px 1px #454545;*/
+}
+
+.navbar > .container > #navbar > .nav > li > a:hover {
+	color: #FFF;
+}
+
+.navbar > .container > #navbar > .nav > li > a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #337ab7;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar > .container > #navbar > .nav > li > a:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+#navbar.collapse.in {
+	border: 0px;
+}
+.collapse.in .nav.navbar-nav.navbar-right {
+    background: rgb(51, 122, 183);
+    margin-top: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.navbar > .container > #navbar.collapse.in > .nav > li > a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+.navbar > .container > #navbar.collapse.in > .nav > li > a:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+#hero-container {
+	background: url('../Include/holdhands.jpg') no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+	height: 100vh;
+	margin-bottom: 0px;
+	-webkit-transition: all ease-out 1s;
+	-moz-transition: all ease-out 1s;
+	-o-transition: all ease-out 1s;
+	transition: all ease-out 1s;
+	right: 0;
+	padding: 140px 15px;
+}
+
+#hero-container.parallax-hero {
+	background: url('../Include/StainedGlassBlue.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+	
+	#hero-container.full-height {
+		height: 100vh;
+	}
+	
+	#hero-container .hero-type {
+		text-align: left;
+	}
+	
+		#hero-container .hero-type h3 {
+			font-size: 60px;
+			font-weight: bold;
+			color: #FFFFFF;
+			margin: 0;
+		}
+		
+			#hero-container .hero-type h3 span {
+				border-bottom: 1px solid;
+				padding-bottom: 15px;
+				margin-bottom: 15px;
+				display: inline-block;
+				text-shadow: 2px 2px 1px #696969, 3px 3px 0px rgb(27, 27, 27);
+			}
+			
+			#hero-container .hero-type h3 span.tagline {
+				font-size: 60px;
+				color: #fff;
+				font-style: italic;
+				border-bottom: none;
+				padding-bottom: 15px;
+				margin-bottom: 15px;
+				display: inline-block;
+				text-shadow: 2px 2px 1px #696969, 3px 3px 0px rgb(27, 27, 27);
+			}
+			
+		.hero-type button {
+			/*width: 100%;*/
+			padding: 10px 100px;
+			font-size: 20px;
+			background-color: rgba(0, 0, 0, 0);
+			border: 3px solid #fff;
+			color: #fff;
+			outline: none;
+			opacity: 0.8;
+			margin-top: 15px;
+			-webkit-transition: all ease-out .5s;
+			-moz-transition: all ease-out .5s;
+			-o-transition: all ease-out .5s;
+			transition: all ease-out .5s;
+		}
+		
+		.hero-type button:hover, 
+		.hero-type button:focus {
+			background-color: #FFFFFF;
+			border-color: #FFFFFF;
+			color: #000000;
+		}
+		
+			#hero-container button:focus,
+			#hero-container button:hover {
+				opacity: 1;
+			}
+			
+#attn-grab, #attn-grab-2 {
+	padding-top: 50px;
+	padding-bottom: 45px;
+}
+
+	#attn-grab .btn-border, 
+	#attn-grab-2 .btn-border, 
+	#contenttable .ms-content-wrapper > .container-fluid .container .connect-form button.btn {
+		padding: 15px 100px;
+		border-radius: 40px;
+		font-size: 22px;
+		border: 3px solid #337AB7;
+		background-color: #fff;
+		color: #337AB7;
+		-webkit-transition: all ease-out .5s;
+		-moz-transition: all ease-out .5s;
+		-o-transition: all ease-out .5s;
+		transition: all ease-out .5s;
+	}
+	
+	#attn-grab .btn-border:hover,
+	#attn-grab .btn-border:focus,
+	#attn-grab-2 .btn-border:hover,
+	#attn-grab-2 .btn-border:focus,
+	#contenttable .ms-content-wrapper > .container-fluid .container .connect-form button.btn:hover, 
+	#contenttable .ms-content-wrapper > .container-fluid .container .connect-form button.btn:focus {
+		background-color: #337AB7;
+		color: #fff;
+	}
+	
+#about-us {
+	background: url('../Include/communion.jpeg') no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+	height: 500px;
+	margin-bottom: 0px;
+	-webkit-transition: all ease-out 1s;
+	-moz-transition: all ease-out 1s;
+	-o-transition: all ease-out 1s;
+	transition: all ease-out 1s;
+	right: 0;
+	padding: 140px 15px;
+	text-align: center;
+}
+
+#about-us .page-lead .title,
+#media .page-lead .title {
+	color: #fff;
+}
+
+#about-us button, #media button {
+	/*width: 100%;*/
+	padding: 10px 100px;
+	font-size: 20px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 3px solid #fff;
+	color: #fff;
+	outline: none;
+	opacity: 0.8;
+	margin-top: 15px;
+	-webkit-transition: all ease-out .5s;
+	-moz-transition: all ease-out .5s;
+	-o-transition: all ease-out .5s;
+	transition: all ease-out .5s;
+}
+
+#about-us button:hover, 
+#about-us button:focus,
+#media button:hover, 
+#media button:focus {
+	background-color: #FFFFFF;
+	border-color: #FFFFFF;
+	color: #000000;
+}
+
+	#about-us button:focus,
+	#about-us button:hover,
+	#media button:focus,
+	#media button:hover {
+		opacity: 1;
+	}
+	
+#media {
+	background: url('../Include/sermons.jpg') no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+	height: 500px;
+	margin-bottom: 0px;
+	-webkit-transition: all ease-out 1s;
+	-moz-transition: all ease-out 1s;
+	-o-transition: all ease-out 1s;
+	transition: all ease-out 1s;
+	right: 0;
+	padding: 140px 15px;
+	text-align: center;
+}
+
+#contact-container {
+		position: relative;
+	}
+	
+	#contact-container .contact-field {
+		padding: 10px 15px;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		width: 100%;
+		border-bottom: 1px solid #EEE;
+		margin-top: 25px;
+	}
+	
+		#contact-container .contact-field.contact-textarea {
+			margin-bottom: 25px;
+		}
+		#contact-container .contact-field.alternate {
+			background: inherit;
+		}
+		#contact-container .contact-field:focus {
+			width: 100%;
+			border-bottom: 1px solid #1D75BD;
+			-webkit-transition: all ease-out 1s;
+			-moz-transition: all ease-out 1s;
+			-o-transition: all ease-out 1s;
+			transition: all 1s ease;
+			outline: none;
+		}
+		
+		#contact-container .submit-container {
+			text-align: right;
+		}
+		
+		#contact-container .submit-container button {
+			width: 100%;
+			padding: 10px 15px;
+			background-color: #1D75BD;
+			border: 1px solid #1D75BD;
+			outline: none;
+			opacity: 0.8;
+			-webkit-transition: all ease-out .5s;
+			-moz-transition: all ease-out .5s;
+			-o-transition: all ease-out .5s;
+			transition: all ease-out .5s;
+		}
+		
+			#contact-container .submit-container button:focus,
+			#contact-container .submit-container button:hover {
+				opacity: 1;
+			}
+			
+		#contact-container div h3 {
+			margin: 0;
+		}
+	
+		#contact-container .form-row {
+		  padding-top: 115px;
+		}
+		
+		#info {
+			background: url('../Include/church.jpg') no-repeat center center scroll;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			position: relative;
+			height: 500px;
+			margin-bottom: 0px;
+			-webkit-transition: all ease-out 1s;
+			-moz-transition: all ease-out 1s;
+			-o-transition: all ease-out 1s;
+			transition: all ease-out 1s;
+			right: 0;
+			padding: 140px 15px;
+			text-align: center;
+			text-align: center;
+			padding: 25px 0px;
+		}
+		
+		#new {
+			background: url('../Include/church.jpg') no-repeat center center scroll;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			position: relative;
+			height: 500px;
+			margin-bottom: 0px;
+			-webkit-transition: all ease-out 1s;
+			-moz-transition: all ease-out 1s;
+			-o-transition: all ease-out 1s;
+			transition: all ease-out 1s;
+			right: 0;
+			padding: 140px 15px;
+			text-align: center;
+			text-align: center;
+			padding: 25px 0px;
+		}
+		
+		.page-head .glyphicon {
+			font-size: 32px;
+			color: #EBF2F8;
+		}
+		
+		#connect {
+			background: url('../Include/church.jpg') no-repeat center center scroll;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			position: relative;
+			height: 500px;
+			margin-bottom: 0px;
+			-webkit-transition: all ease-out 1s;
+			-moz-transition: all ease-out 1s;
+			-o-transition: all ease-out 1s;
+			transition: all ease-out 1s;
+			right: 0;
+			padding: 140px 15px;
+			text-align: center;
+			text-align: center;
+			padding: 25px 0px;
+		}
+		
+		#info .page-lead,
+		#new .page-lead,
+		#connect .page-lead {
+			margin: 0;
+		}
+		
+		#info .row-info,
+		#new .row-info,
+		#connect .row-info {
+			padding: 0px 0px 15px;
+			border: 2px solid #fff;
+			width: 325px;
+			margin: 0 auto;
+			margin-bottom: 15px;
+		}
+			
+			#info .row-info .title,
+			#new .row-info .title,
+			#connect .row-info .title {
+				background: #FFFFFF;
+			}
+			
+			.row-info .page-lead .tagline {
+				color: #fff;
+				font-style: normal;
+			}
+			
+			.connect-form div img {
+				width: 100%;
+			}
+			
+			.connect-form .form-error-message img {
+				width: auto;
+			}
+			
+			.connect-form .form-all > .form-section .form-line .form-label-left {
+				display: none;
+			}
+			
+			.connect-form .form-all > .form-section .form-line .form-sub-label {
+				position: absolute;
+				top: -1em;
+				left: 0.08em;
+				color: #aaaaaa;
+				z-index:-1;
+				font-size: 0.85em;
+				animation: float-labels 300ms none ease-out;
+			  -webkit-animation: float-labels 300ms none ease-out;
+			   
+				/* There is a bug sometimes pausing the animation. This avoids that.*/
+				animation-play-state:running !important;
+			  -webkit-animation-play-state:running !important;
+			}
+			
+			/* Label highlight effect also for non-JS browsers */
+			.connect-form .form-all > .form-section .form-line input:not(.empty):focus + .connect-form .form-all > .form-section .form-line .form-sub-label {
+				color: #0099ff;
+			}
+			
+			/* In JS Browsers the .empty class is assigned to empty inputs -> label is rendered like a placeholder in the input field */
+			.connect-form .form-all > .form-section .form-line input.empty + .connect-form .form-all > .form-section .form-line .form-sub-label {
+				top: 0.1em;
+				font-size: 1.5em;
+				animation:none;
+			  -webkit-animation:none;
+			}
+			
+			/* The animation is a bit more complex than what is achievable with simple transitions, because I do not want the label to fly over my input. The place-holder label should fade out first and then appear again above the input text */
+			@keyframes float-labels {
+			  
+			   0% {
+				opacity:1;
+				color:#aaa;
+				top:0.1em;
+				font-size:1.5em;
+			  }
+			  20% {
+				font-size:1.5em;
+				opacity:0;
+			  }
+			  30% {
+				top:0.1em;
+			  }
+			  50% {
+				opacity:0;
+				font-size:0.85em;
+			  }
+			  100% {
+				top:-1em; 
+				opacity:1; 
+			  }
+			}
+			@-webkit-keyframes float-labels {
+			  
+			 0% {
+				opacity:1;
+				color:#aaa;
+				top:0.1em;
+				font-size:1.5em;
+			  }
+			  20% {
+				font-size:1.5em;
+				opacity:0;
+			  }
+			  30% {
+				top:0.1em;
+			  }
+			  50% {
+				opacity:0;
+				font-size:0.85em;
+			  }
+			  100% {
+				top:-1em; 
+				opacity:1; 
+			  }
+			}
+			
+			.connect-form .form-all > .form-section .form-line .form-input {
+				display: block;
+			}
+			
+			.connect-form .form-all > .form-section .form-line .form-sub-label-container {
+				display: block;
+				margin: 0;
+			}
+			
+			.connect-form .form-all > .form-section .form-line #cid_4 .form-sub-label-container {
+				display: inline-block;
+			}
+			
+			.connect-form .form-all > .form-section .form-line input,
+			.connect-form .form-all > .form-section .form-line textarea {
+				width: 100%;
+				padding: 10px 15px;
+				border-top: none;
+				border-left: none;
+				border-right: none;
+				border-bottom: 3px solid #EBEBEB;
+				outline: none;
+				box-shadow: none;
+				background: none;
+			}
+			
+			.connect-form .form-all > .form-section .form-line.form-line-error,
+			.connect-form .form-all > .form-section .form-line.form-line-active {
+				background: none;
+			}
+			
+			.connect-form .form-all > .form-section .form-line input:hover,
+			.connect-form .form-all > .form-section .form-line input:focus,
+			.connect-form .form-all > .form-section .form-line textarea:hover,
+			.connect-form .form-all > .form-section .form-line textarea:focus {
+				width: 100%;
+				padding: 10px 15px;
+				border-top: none;
+				border-left: none;
+				border-right: none;
+				border-bottom: 3px solid #EBEBEB;
+				outline: none;
+				box-shadow: none;
+				background: none;
+			}
+
+#footer {
+    background: #333;
+    color: #FFF;
+    padding: 25px 0px;
+}
+
+#footer p {
+    margin: 0;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+	#hero-container {
+		padding: 70px 15px;
+	}
+	.hero-type h3 {
+		font-size: 40px !important;
+	}
+	#hero-container .hero-type h3 span.tagline {
+		font-size: 40px !important;
+	}
+	#attn-grab, #attn-grab-2 {
+		text-align: center;
+	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+	#hero-container {
+		padding: 70px 15px;
+	}
+	.hero-type h3 {
+		font-size: 40px !important ;
+	}
+	#hero-container .hero-type h3 span.tagline {
+		font-size: 40px !important;
+	}
+	#attn-grab, #attn-grab-2 {
+		text-align: center;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	#attn-grab, #attn-grab-2 {
+		text-align: center;
+	}
+	#hero-container {
+		padding: 70px 15px;
+	}
+	.hero-type h3 {
+		font-size: 40px !important;
+	}
+	#hero-container .hero-type h3 span.tagline {
+		font-size: 40px !important;
+	}
+}
